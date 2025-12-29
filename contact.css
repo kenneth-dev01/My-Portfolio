@@ -1,0 +1,79 @@
+.contact_sec {
+  margin: 25px;
+  margin-top: 75px;
+}
+
+.contact-card {
+  position: relative;
+  max-width: 520px;
+  padding: 20px;
+  border-radius: 16px;
+  background: rgba(255,255,255,0.9);
+  overflow: visible;
+}
+
+.contact-card::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  padding: 2px;
+  border-radius: 16px;
+  background: linear-gradient(
+    90deg,
+    #800000,
+    #ff4d4d,
+    #ffcc00,
+    #ff4d4d,
+    #800000
+  );
+  background-size: 300% 300%;
+  animation: borderFlow 6s linear infinite;
+  -webkit-mask:
+    linear-gradient(#fff 0 0) content-box,
+    linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+  pointer-events: none; 
+}
+
+.contact-desc {
+  font-size: 14px;
+  color: rgb(90,0,0);
+  margin-bottom: 14px;
+}
+
+.contact-fields {
+  position: relative; 
+  z-index: 1;
+}
+
+.contact-fields input,
+.contact-fields textarea {
+  width: 100%;
+  margin-bottom: 10px;
+  padding: 10px;
+  border-radius: 10px;
+  border: 1px solid rgb(180, 120, 120);
+  font-family: inherit;
+  resize: none;
+  background: #f8f4f4;
+  box-sizing: border-box;
+}
+
+.send-btn {
+  display: block;
+  text-align: center;
+  margin-top: 14px;
+  padding: 10px;
+  border-radius: 12px;
+  text-decoration: none;
+  font-weight: 600;
+  color: white;
+  background: rgb(128,0,0);
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.send-btn:hover {
+  background: rgb(160,0,0);
+  transform: translateY(-2px);
+}

@@ -1,0 +1,79 @@
+.anime_sec {
+    padding: 20px;
+    position: static;
+    z-index: auto;
+}
+
+.anime_sec .section-title {
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 12px;
+    color: rgb(128,0,0);
+}
+
+.anime-grid {
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+}
+
+.anime-item {
+    position: relative;
+    width: 200px;
+    height: 180px;
+    overflow: hidden;
+    border-radius: 12px;
+    flex-shrink: 0;
+    border: 2px solid transparent;
+}
+
+.anime-item::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    padding: 2px;
+    border-radius: 11px;
+    background: linear-gradient(
+        90deg,
+        #800000,
+        #ff4d4d,
+        #ffcc00,
+        #ff4d4d,
+        #800000
+    );
+    background-size: 300% 300%;
+    animation: borderFlow 6s linear infinite;
+    -webkit-mask:
+        linear-gradient(#fff 0 0) content-box,
+        linear-gradient(#fff 0 0);
+    -webkit-mask-composite: xor;
+    mask-composite: exclude;
+    pointer-events: none;
+}
+
+.anime-item a img {
+    width: 100%;
+    height: calc(100% - 30px);
+    object-fit: cover;
+    display: block;
+    transition: transform 0.3s ease;
+}
+
+.anime-item a:hover img {
+    transform: scale(1.05);
+}
+
+.anime-item p {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    margin: 0;
+    padding: 6px 0;
+    text-align: center;
+    font-weight: bold;
+    color: rgb(128,0,0);
+    background: rgba(255,255,255,0.8);
+    border-bottom-left-radius: 11px;
+    border-bottom-right-radius: 11px;
+    z-index: 2;
+}

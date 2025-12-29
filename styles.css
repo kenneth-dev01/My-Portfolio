@@ -1,0 +1,56 @@
+body {
+    margin: 0;
+    font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+    background: #fff;
+    overflow-x: hidden;
+}
+
+.global-bg {
+    position: fixed;
+    inset: 0;
+    z-index: -1;
+    overflow: hidden;
+}
+.global-bg span {
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    opacity: 0.2;
+
+    background: linear-gradient(
+        135deg,
+        #800000aa,
+        #ff4d4daa,
+        #ffcc00aa
+    );
+
+    animation: float 20s ease-in-out infinite;
+}
+
+.global-bg span:nth-child(1) {
+    top: 15%;
+    left: 10%;
+}
+
+.global-bg span:nth-child(2) {
+    bottom: 20%;
+    right: 15%;
+    animation-delay: -6s;
+}
+
+.global-bg span:nth-child(3) {
+    top: 40%;
+    right: 35%;
+    animation-delay: -10s;
+}
+
+@keyframes float {
+    0% { transform: translate(0, 0); }
+    50% { transform: translate(25px, -35px); }
+    100% { transform: translate(0, 0); }
+}
+section {
+    position: relative;
+    z-index: 1;
+}

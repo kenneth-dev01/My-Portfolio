@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-..." crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <title>Kenneth B.</title>
+        <link rel="stylesheet" href="styles.css">
+        <link rel="stylesheet" href="home.css">
+        <link rel="stylesheet" href="about.css">
+        <link rel="stylesheet" href="projects.css">
+        <link rel="stylesheet" href="gallery.css">
+        <link rel="stylesheet" href="achievements.css">
+        <link rel="stylesheet" href="anime.css">
+        <link rel="stylesheet" href="contact.css">
+        <link rel="stylesheet" href="navbar.css">
+        <link rel="stylesheet" href="theme.css">
+
+    </head>
+    <body> 
+        <header class="navbar">
+            <div class="nav-container">
+                <div class="logo">MyPortfolio</div>
+
+                <nav class="nav-links">
+                    <a href="#home">Home</a>
+                    <a href="#about">About Me</a>
+                    <a href="#projects">My Projects</a>
+                    <a href="#gallery">Gallery</a>
+                    <a href="#achievements">Achievements</a>
+                    <a href="#anime">Anime</a>
+                    <a href="#contact">Contact Me</a>
+                </nav>
+
+                <div class="theme-toggle">
+                    <input type="checkbox" id="theme-checkbox">
+                    <label for="theme-checkbox" class="theme-label"></label>
+                </div>
+            </div>
+        </header>
+
+        <div class="global-bg">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>  
+        <section class="first_sec" id="home">
+            <div class="profile_div">
+
+            <div class="profile-wrapper">
+                <img class="profile" src="images/image_1.jpg" alt="My Picture">
+            </div>
+
+            <div class="text_content">
+                <div class="dynamic_txt">
+                    <ul class="text_slider">
+                        <li><span>Hello!</span></li>
+                        <li><span>I'm John Kenneth B. Sumague</span></li>
+                        <li><span>A Student Programmer</span></li>
+                        <li><span>Currently a College Student</span></li>
+                        <li><span>at LSPU-SPCC</span></li>
+                        <li>Hello!</li>
+                    </ul>
+                </div>
+
+                <p class="welcome-txt">
+                    <span>Welcome to my Website!<br>Feel Free to Follow Me on My Socials🫶</span>
+                </p>
+                <div class="social-icons">
+                    <a href="https://www.facebook.com/johnkenneth.sumague.92/" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://www.instagram.com/hte.nnek?igsh=MWUxM3Rpb2l4eGUybQ==" target="_blank"><i class="fab fa-instagram"></i></a>
+                    <a href="https://tiktok.com/@kenshinsumague" target="_blank"><i class="fab fa-tiktok"></i></a>
+                </div>
+            </div>
+
+            </div>
+        </section>
+
+
+        <section class="about_sec" id="about">
+            <h2 class="about-title">About Me</h2>
+
+            <div class="about-content">
+                <p>
+                    I'm an aspiring back-end developer and a Bachelor of Science in Information Technology 
+                    student at LSPU-SPCC. Alongside my studies, I work part-time as a candy maker, which helps 
+                    support my family and teaches me responsibility and time management. I also enjoy listening 
+                    to slow jazz and pop ballads, watching anime, and casually playing instruments like the guitar 
+                    and drums to relax and clear my mind.
+                </p>
+
+                <p>
+                    I started programming during my senior high school years while developing our thesis system, 
+                    and that experience sparked my interest in software development. Although programming can be 
+                    stressful, especially when things don’t work as expected, I stay persistent and motivated to 
+                    improve my skills. Despite the challenges, I continue to push myself to learn, grow, and finish 
+                    every project I start.
+                </p>
+            </div>
+        </section>
+
+
+        <section class="projects_sec" id="projects">
+            <h2 class="projects-title">My Projects</h2>
+
+            <div class="projects-grid">
+                <div class="project-card">
+                    <h3>Portfolio Website</h3>
+                    <p>
+                        A website made purely by html and css language only. It has some
+                        features like gradient color borders, light and dark theme feature,
+                        and a user friendly interface for visitors.
+                    </p>
+                </div>
+
+                <div class="project-card">
+                    <h3>Arduino System</h3>
+                    <p>
+                        A system that automatically checks the ph level of the cabbage plant
+                        and automatically apply a fertilizer solution (alkaline) when the ph
+                        is too low and another fertilizer solution (acid) when the ph is too high.
+                    </p>
+                </div>
+
+                <div class="project-card">
+                    <h3>DC Motor</h3>
+                    <p>
+                        A fully working DIY DC motor made only by using wooden blocks, strong
+                        magnets, a metal rod, wires, and a high-voltage battery. This small DC
+                        motor can function as a mini fan motor; however, due to its high voltage
+                        usage, it is not suitable for everyday use.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+    <section class="gallery_sec" id="gallery">
+    <h2 class="section-title">Gallery</h2>
+    <div class="gallery-grid">
+
+        <div class="gallery-item">
+            <input type="checkbox" id="img1">
+            <label for="img1">
+                <img src="images/image2 (1).jpg" alt="Gallery 1">
+            </label>
+            <div class="modal">
+                <label for="img1" class="close">&times;</label>
+                <div class="modal-content">
+                <img src="images/image2 (1).jpg" alt="Gallery 1">
+                </div>
+            </div>
+        </div>
+        <div class="gallery-item">
+            <input type="checkbox" id="img2">
+            <label for="img2">
+                <img src="images/image3 (1).jpg" alt="Gallery 2">
+            </label>
+            <div class="modal">
+                <label for="img2" class="close">&times;</label>
+                <div class="modal-content">
+                <img src="images/image3 (1).jpg" alt="Gallery 2">
+                </div>
+            </div>
+        </div>
+        <div class="gallery-item">
+            <input type="checkbox" id="img3">
+            <label for="img3">
+                <img src="images/image4.jpg" alt="Gallery 3">
+            </label>
+            <div class="modal">
+                <label for="img3" class="close">&times;</label>
+                <div class="modal-content">
+                <img src="images/image4.jpg" alt="Gallery 3">
+                </div>
+            </div>
+        </div>
+        <div class="gallery-item">
+            <input type="checkbox" id="img4">
+            <label for="img4">
+                <img src="images/image5.jpg" alt="Gallery 4">
+            </label>
+            <div class="modal">
+                <label for="img4" class="close">&times;</label>
+                <div class="modal-content">
+                <img src="images/image5.jpg" alt="Gallery 4">
+                </div>
+            </div>
+        </div>
+        <div class="gallery-item">
+            <input type="checkbox" id="img5">
+            <label for="img5">
+                <img src="images/image6 (1).jpg" alt="Gallery 5">
+            </label>
+            <div class="modal">
+                <label for="img5" class="close">&times;</label>
+                <div class="modal-content">
+                <img src="images/image6 (1).jpg" alt="Gallery 5">
+                </div>
+            </div>
+        </div>
+        <div class="gallery-item">
+            <input type="checkbox" id="img6">
+            <label for="img6">
+                <img src="images/image7 (1).jpg" alt="Gallery 6">
+            </label>
+            <div class="modal">
+                <label for="img6" class="close">&times;</label>
+                <div class="modal-content">
+                <img src="images/image7 (1).jpg" alt="Gallery 6">
+                </div>
+            </div>
+        </div>
+        <div class="gallery-item">
+            <input type="checkbox" id="img7">
+            <label for="img7">
+                <img src="images/image8 (1).jpg" alt="Gallery 7">
+            </label>
+            <div class="modal">
+                <label for="img7" class="close">&times;</label>
+                <div class="modal-content">
+                <img src="images/image8 (1).jpg" alt="Gallery 7">
+                </div>
+            </div>
+        </div>
+        <div class="gallery-item">
+            <input type="checkbox" id="img8">
+            <label for="img8">
+                <img src="images/image9 (1).jpg" alt="Gallery 8">
+            </label>
+            <div class="modal">
+                <label for="img8" class="close">&times;</label>
+                <div class="modal-content">
+                <img src="images/image9 (1).jpg" alt="Gallery 8">
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>
+
+
+    <section class="achievements_sec" id="achievements">
+    <h2 class="section-title">Achievements</h2>
+    <div class="achievements-grid">
+
+        <div class="achievement-item">
+            <a href="https://www.facebook.com/zhander.raymundo.16/videos/655526169831236/?app=fbl" target="_blank">
+                <img src="images/image10.jpg" alt="Achievement 1">
+            </a>
+            <p><strong>Laguna Musikahan 2023-4th Placer</strong></p>
+        </div>
+
+        <div class="achievement-item">
+            <input type="checkbox" id="ach2">
+            <label for="ach2">
+                <img src="images/image11 (1).jpg" alt="Achievement 2">
+            </label>
+            <p><strong>Python Essentials 1 Certificate</strong></p>
+            <div class="modal">
+                <label for="ach2" class="close">&times;</label>
+                <div class="modal-content">
+                    <img src="images/image11 (1).jpg" alt="Achievement 2">
+                </div>
+            </div>
+        </div>
+
+        <div class="achievement-item">
+            <input type="checkbox" id="ach3">
+            <label for="ach3">
+                <img src="images/image12.jpg" alt="Achievement 3">
+            </label>
+            <p><strong>Academic Achievements</strong></p>
+            <div class="modal">
+                <label for="ach3" class="close">&times;</label>
+                <div class="modal-content">
+                    <img src="images/image12.jpg" alt="Achievement 3">
+                </div>
+            </div>
+        </div>
+
+        <div class="achievement-item">
+            <input type="checkbox" id="ach4">
+            <label for="ach4">
+                <img src="images/image13 (1).jpg" alt="Achievement 4">
+            </label>
+            <p><strong>SDRRM Service Award</strong></p>
+            <div class="modal">
+                <label for="ach4" class="close">&times;</label>
+                <div class="modal-content">
+                    <img src="images/image13 (1).jpg" alt="Achievement 4">
+                </div>
+            </div>
+        </div>
+
+        </div>
+    </section>
+
+    <section class="anime_sec" id="anime">
+        <h2 class="section-title">Most Watched Anime</h2>
+        <div class="anime-grid">
+
+            <div class="anime-item">
+                <a href="https://youtu.be/YWMCcdZ6AdQ?si=twwwdvFuQ5SpCJRi" target="_blank">
+                    <img src="images/image14 (1).jpg" alt="Anime 1">
+                </a>
+                <p><strong>Campfire Cooking In Another World</strong></p>
+            </div>
+
+            <div class="anime-item">
+                <a href="https://youtu.be/b6DK28daegk?si=Fg3pqbO1csab0aGF" target="_blank">
+                    <img src="images/image15.jpg" alt="Anime 2">
+                </a>
+                <p><strong>Haikyuu</strong></p>
+            </div>
+
+            <div class="anime-item">
+                <a href="https://youtu.be/Ln_imebEmAQ?si=LhMpg6RzgP_dQezu" target="_blank">
+                    <img src="images/image16.jpg" alt="Anime 3">
+                </a>
+                <p><strong>Black Clover</strong></p>
+            </div>
+
+            <div class="anime-item">
+                <a href="https://youtu.be/IrHTT2IEKpE?si=CpjHoMicQDFn4Bn6" target="_blank">
+                    <img src="images/image17.jpg" alt="Anime 4">
+                </a>
+                <p><strong>Solo Leveling</strong></p>
+            </div>
+
+            <div class="anime-item">
+                <a href="https://youtu.be/ciaL325dUos?si=fGfy-_acnNEUgmHr" target="_blank">
+                    <img src="images/image18 (1).jpg" alt="Anime 5">
+                </a>
+                <p><strong>My Hero Academia</strong></p>
+            </div>
+
+            <div class="anime-item">
+                <a href="https://youtu.be/yn2nTk2daVo?si=mZrxlB8itdfP9tWk" target="_blank">
+                    <img src="images/image19.jpeg" alt="Anime 6">
+                </a>
+                <p><strong>Blue Lock</strong></p>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="contact_sec" id="contact">
+        <h2 class="section-title">Contact Me</h2>
+
+        <div class="contact-card">
+            <p class="contact-desc">
+            Feel free to leave your response below. Thank You!
+            </p>
+            <form 
+            action="https://formspree.io/f/mvzovjna" 
+            method="POST" 
+            class="contact-fields"
+            >
+            <input type="text" name="nickname" placeholder="Enter Your Preferred Nickname" required>
+            <input type="email" name="email" placeholder="Enter Your Email" required>
+            <textarea name="message" placeholder="Enter Recommendations/Message" required></textarea>
+            <button type="submit" class="send-btn">Send Your Response</button>
+            </form>
+
+        </div>
+    </section>
+
+    <script src="theme.js"></script>
+
+    </body>
+</html>
