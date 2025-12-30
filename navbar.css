@@ -49,9 +49,10 @@ html { scroll-behavior: smooth; }
 
 .nav-links {
   display: flex;
-  gap: 15px;
+  gap: 12px;
   flex-wrap: wrap;
   margin-right: 22px;
+  max-height: calc(2 * 40px);
 }
 
 .nav-links a {
@@ -61,7 +62,10 @@ html { scroll-behavior: smooth; }
   padding: 8px 12px;
   border-radius: 8px;
   transition: all 0.3s ease;
-  font-size: clamp(12px, 1vw, 16px);
+  font-size: clamp(10px, 2vw, 16px);
+  white-space: nowrap;
+  flex-shrink: 1 1 auto;
+  text-align: center;
 }
 
 .nav-links a:hover,
@@ -88,6 +92,6 @@ html { scroll-behavior: smooth; }
   .nav-links a {
     padding: 6px 10px;
     margin-bottom: 6px;
-    font-size: clamp(12px, 1vw, 14px);
+    font-size: clamp(8px, 3vw, 14px);
   }
 }
