@@ -5,6 +5,8 @@
 .first_sec {
     position: relative;
     margin: 25px;
+    margin-bottom: 300px;
+    margin-top: 150px;
     padding: 30px;
     border-radius: 15px;
     background: rgba(255, 255, 255, 0.8);
