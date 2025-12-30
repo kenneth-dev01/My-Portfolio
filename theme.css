@@ -1,12 +1,25 @@
 body {
-    --bg-color: #fff; 
+    --bg-color: #fff;
     --text-color: rgb(90,0,0);
     --accent-color: rgb(128,0,0);
-    --card-bg: #f2f2f2;
+    --card-bg: rgba(255,255,255,0.8);
     background: var(--bg-color);
     color: var(--text-color);
     font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
     transition: background 0.3s ease, color 0.3s ease;
+}
+
+section, .project-card, .about_sec, .contact-card, .anime-item, .achievement-item, .gallery-item, .navbar {
+    background: var(--card-bg);
+    transition: background 0.3s ease, color 0.3s ease;
+    border-radius: 15px;
+}
+
+.gallery-item,
+.achievement-item,
+.anime-item,
+.project-card {
+    overflow: hidden;
 }
 
 #theme-checkbox {
@@ -65,16 +78,9 @@ body.dark-theme h3 {
 }
 
 .theme-toggle {
-    position: fixed;
-    top: 15px;
-    right: 10px;
-    z-index: 2000;
-}
-@media screen and (max-width: 600px) {
-    .theme-toggle {
-        top: 10px;
-        right: 10px;
-    }
+    position: relative;
+    margin-left: 10px;
+    margin-right: 10px;
 }
 .theme-label {
     cursor: pointer;
@@ -118,4 +124,30 @@ body.dark-theme .navbar .nav-links a.active {
 
 body.dark-theme .section-title {
     color: #ffcc00;
+}
+
+.achievement-item .modal,
+.gallery-item .modal,
+.project-card .modal {
+    position: fixed;
+    inset: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(0,0,0,0.7);
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s ease;
+}
+
+.achievement-item .modal .close,
+.gallery-item .modal .close,
+.project-card .modal .close {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 36px;
+    color: white;
+    cursor: pointer;
+    z-index: 2002;
 }
