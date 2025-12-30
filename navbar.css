@@ -52,7 +52,7 @@ html { scroll-behavior: smooth; }
   gap: 12px;
   flex-wrap: wrap;
   margin-right: 22px;
-  max-height: calc(2 * 40px);
+  max-height: none;
 }
 
 .nav-links a {
@@ -86,12 +86,13 @@ html { scroll-behavior: smooth; }
   }
 
   .nav-links {
-    gap: 12px;
+    gap: 8px;
   }
 
   .nav-links a {
-    padding: 6px 10px;
+    padding: 5px 8px;
     margin-bottom: 6px;
-    font-size: clamp(8px, 3vw, 14px);
+    font-size: clamp(8px, 3vw, 12px);
   }
 }
+
