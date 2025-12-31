@@ -67,7 +67,7 @@ html { scroll-behavior: smooth; }
   display: flex;
   gap: 12px;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: space-evenly;
   margin-right: 0;
   max-height: none;
 }
@@ -112,3 +112,4 @@ html { scroll-behavior: smooth; }
     font-size: clamp(8px, 3vw, 12px);
   }
 }
+
