@@ -16,6 +16,7 @@
     display: flex;
     gap: 12px;
     flex-wrap: wrap;
+    justify-content: center;
 }
 
 .achievement-item {
@@ -26,6 +27,8 @@
     border-radius: 12px;
     flex-shrink: 0;
     border: 2px solid transparent;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .achievement-item::before {
@@ -156,3 +159,4 @@
     border-bottom-right-radius: 11px;
     z-index: 2;
 }
+
