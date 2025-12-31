@@ -97,18 +97,24 @@ html { scroll-behavior: smooth; }
   100% { background-position: 0% 50%; }
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 768px) {
   .nav-container {
     padding: 0.5rem;
   }
 
   .nav-links {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
     gap: 8px;
+    max-height: none;
+    justify-items: center;
+    padding: 10px 0;
   }
 
   .nav-links a {
-    padding: 5px 8px;
-    margin-bottom: 6px;
-    font-size: clamp(8px, 3vw, 12px);
+    font-size: clamp(10px, 3vw, 14px);
+    padding: 6px 8px;
+    text-align: center;
+    width: 100%;
   }
 }
