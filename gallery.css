@@ -16,6 +16,9 @@
     display: flex;
     flex-wrap: wrap;
     gap: 12px;
+    justify-content: center;
+    align-items: center;
+
 }
 
 .gallery-item {
@@ -26,6 +29,7 @@
     border-radius: 12px;
     flex-shrink: 0;
     border: 3px solid transparent;
+    flex: 0 0 auto;
 }
 
 .gallery-item::before {
