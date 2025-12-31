@@ -16,6 +16,8 @@
     display: flex;
     gap: 12px;
     flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
 }
 
 .anime-item {
@@ -26,6 +28,8 @@
     border-radius: 12px;
     flex-shrink: 0;
     border: 2px solid transparent;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .anime-item::before {
@@ -78,3 +82,4 @@
     border-bottom-right-radius: 11px;
     z-index: 2;
 }
+
