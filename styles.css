@@ -53,4 +53,29 @@ body {
 section {
     position: relative;
     z-index: 1;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.section-title,
+.about_sec,
+.contact-card {
+    text-align: center;
+}
+
+.site-wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 16px;
+}
+
+.projects_sec,
+.gallery_sec,
+.achievements_sec,
+.anime_sec,
+.contact_sec,
+.about_sec {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
