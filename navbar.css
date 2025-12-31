@@ -38,6 +38,22 @@ html { scroll-behavior: smooth; }
   pointer-events: none;
 }
 
+.logo {
+    margin-left: 5px;
+    text-decoration: none;
+    color: inherit;
+    display: inline-block;
+    font-weight: 700;
+    font-size: 24px;
+    transition: transform 0.3s ease;
+}
+
+.logo:hover {
+    opacity: 0.85;
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
 .nav-container {
   display: flex;
   justify-content: space-between;
@@ -51,7 +67,8 @@ html { scroll-behavior: smooth; }
   display: flex;
   gap: 12px;
   flex-wrap: wrap;
-  margin-right: 22px;
+  justify-content: space-evenly;
+  margin-right: 0;
   max-height: none;
 }
 
@@ -95,4 +112,3 @@ html { scroll-behavior: smooth; }
     font-size: clamp(8px, 3vw, 12px);
   }
 }
-
