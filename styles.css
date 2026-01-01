@@ -79,3 +79,31 @@ section {
     flex-direction: column;
     align-items: center;
 }
+
+.copyright {
+    margin-top: 80px;
+    padding: 20px 10px;
+    text-align: center;
+    font-size: 14px;
+
+    background: var(--bg-color);
+    color: var(--text-color);
+
+    border-radius: 14px;
+}
+
+.copyright::before {
+    content: "";
+    display: block;
+    height: 2px;
+    margin-bottom: 12px;
+    background: linear-gradient(
+        90deg,
+        #800000,
+        #ff4d4d,
+        #ffcc00,
+        #ff4d4d,
+        #800000
+    );
+}
+
